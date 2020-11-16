@@ -15,7 +15,20 @@ print(conf_path, work_path, script_path, log_path)
 log_name = 'server'
 
 
-server_port = 50001
+server_port = 10001
 
 
 version = "001"
+
+# redis config
+redis_host = '127.0.0.1'
+redis_port = 6379
+redis_pwd = ''
+redis_db = 0
+
+# mysql_config
+mysql_host = '127.0.0.1'
+mysql_port = 3306
+mysql_user = 'test'
+mysql_pwd = 'test'
+mysql_db = 'database_test'

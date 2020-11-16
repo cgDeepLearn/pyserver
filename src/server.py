@@ -15,7 +15,7 @@ from conf import config
 from utils.log import logger, init_log
 from utils.errors import ServerProcessError, ParameterError
 from decorator import timer, expose
-
+from api import TestApi
 
 class Server(object):
 
@@ -70,8 +70,8 @@ class Server(object):
             apply_detail['req_id'] = req_id
             self._get_query_args(data, apply_detail)
 
-            # 查征方
-            res_data = None
+            # 结果
+            res_data = TestApi(req_data=apply_detail).process()
 
             # 返回
             response = self._errcode(0)
