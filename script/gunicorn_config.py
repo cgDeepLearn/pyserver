@@ -11,7 +11,7 @@ import datetime
 server_ip = '127.0.0.1'
 # linux get ip
 # server_ip = os.popen('ifconfig eth0|grep inet|grep -v 127.0.0.1|grep -v inet6|awk \'{print $2}\'|tr -d "addr:"').readlines()[0].strip('\r\n')
-server_port = 50001
+server_port = 10001
 bind = '%s:%s' % (server_ip, server_port)
 workers = 1  # 工作进程数
 
