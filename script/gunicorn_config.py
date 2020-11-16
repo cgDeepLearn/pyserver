@@ -14,6 +14,7 @@ server_ip = '127.0.0.1'
 server_port = 10001
 bind = '%s:%s' % (server_ip, server_port)
 workers = 1  # 工作进程数
+keepalive = 600  
 
 backlog = 2048  # the maximum number of pending connections
 worker_connections = 2048  # the maximum number of simultaneous clients
