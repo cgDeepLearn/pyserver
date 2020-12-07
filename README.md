@@ -1,5 +1,8 @@
 # pyserver
-template server in python
+template server in python |python微服务小模板
+
+开发日志: https://cgdeeplearn.github.io/2020/05/18/Mirco-service/
+
 
 ## 1. clone project
 
